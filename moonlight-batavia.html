@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Moonlight Batavia
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "mbah kamdi"
+  },
+  "headline": "Moonlight Batavia",
+  "datePublished": "2021-03-15",
+  "image": "https://i.pinimg.com/736x/54/b5/96/54b5966cb7d65f9bc14cf7aa2dcff9b7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ANGKA WAJIB TEMBUS HARI INI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=moonlight+batavia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//zqvee2re50mr.com/7c/26/34/7c263438c0a922e610bc1e9951cbc44f.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4514872,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4514872&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Moonlight Batavia
+            </a>
+        </h1>
+        <p>
+                            Data HK - Pengeluaran Hongkong - Keluaran HK, Data HK Sahabat, Hasil Result HK Hari Ini Dengan update tercepat dan lengkap.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Moonlight Batavia</strong>. Senin selasa rabu kamis jumat sabtu minggu. Batavia also called Batauia in the citys Malay vernacular was the capital of the Dutch East IndiesThe area corresponds to present-day Jakarta IndonesiaBatavia can refer to the city proper or its suburbs and hinterland the Ommelanden which included the much-larger area of the Residency of Batavia in the present-day Indonesian provinces of Jakarta Banten and West Java.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/0c/9d/9c/0c9d9c3cc239321eabb51765e9fe7cd9.jpg" alt="Bpp Kemendagri Jl Kramat Raya 132 Jakarta 1927 Indonesia Dunia Arsitek" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHeZAwRhmu9W2QViScDge_ZHdGuvWJAJIDkbVxSF3k-00L7u_d7HZim1pO2_WFKNFSwLY&amp;ec=45780877';">
+        <figcaption>Bpp Kemendagri Jl Kramat Raya 132 Jakarta 1927 Indonesia Dunia Arsitek from nl.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Its the kind of gift you send when you want to capture the magic of. Disposal of Moonlight Iron Ore Project South Africa. Yeah Spotlight uh moonlight uh Nigga why you trippin.
+    </p>
+    <h3>Moonlite Chili is located in a storefront on Main St.</h3>
+    <p>It is an instant classic. Its the kind of gift you send when you want to capture the magic of. Includes the menu user reviews photos and highest-rated dishes from Moon-Lite Chili. Home Portfolios LED Moonlighting Batavia IL. Moonlight Whiskey Batavia Ohio. FCR the European lead-zinc explorer announces that it has entered into a legally binding agreement for the sale of Batavia Ltd Batavia its wholly-owned Mauritian subsidiary which is the investment holding company for all the Groups South African assets.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Private Railcars Birch Grove And Moonlight Dome On Amtrak S California Zephyr Batavia Ia 8 5 17 Youtube California Zephyr Batavia Amtrak" src="https://i.pinimg.com/originals/40/78/5b/40785b7fe9047c11dbaf9fb044eaf1eb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-WM8CKg2F6MT9SliAOGadVP-Qy0AtqSQnww';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Entrance Moonlight Lighting Glencoe IL Moonlight Effect Uplighting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Batavia And Jakarta Now And Then" src="https://i.pinimg.com/736x/6f/6e/92/6f6e921e9309eb123e86876b8e8ac49d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rpXb4hJPsZw8rbmW2t5zs1z72TPBjA4Pv8wG4GjOQbv9AyeTuUQMs-Cza_MnEKwWGGs&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Disposal of Moonlight Iron Ore Project South Africa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gang Secretarie Gezien Vanaf Het Koningsplein Te Batavia Voor 1880 Jl Veteran 3 Jakarta 2017 Sejarah Indonesia Dunia" src="https://i.pinimg.com/736x/57/78/68/57786876a72b8bdaac18b4e26d4730b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPI1_6TfX_aY-vB_PCeUuRBDPH7w-CtO5P9K0BBZ2vilUwbzX96eIoZBxEsL0Y0v5uOw0&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>It is an instant classic.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bpp Kemendagri Jl Kramat Raya 132 Jakarta 1927 Indonesia Dunia Arsitek" src="https://i.pinimg.com/736x/0c/9d/9c/0c9d9c3cc239321eabb51765e9fe7cd9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHeZAwRhmu9W2QViScDge_ZHdGuvWJAJIDkbVxSF3k-00L7u_d7HZim1pO2_WFKNFSwLY&amp;ec=45780877';" />
+        <small>Source: nl.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>There are many genres in Korean Drama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Chineese Woonhuis Aan Senen Te Batavia 1925 1940 Pizza Hut Jl Senen Raya Jakarta 2017 Arsitektur Kolonial Foto Zaman Dulu Belanda" src="https://i.pinimg.com/736x/42/80/72/4280720f5668df4daaba2228c3c320bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWFe7ieICKKmfoqn0y-f1ohedrxEYdj-iKw';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The interior is chili parlor standard with a selection of tables and booths and a small two-stool lunch counter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Batavia Jacatraweg Circa 1900 Gereja Tua Monumen Indonesia" src="https://i.pinimg.com/474x/b0/7e/5b/b07e5b5c066242fb5d15cb4e8355f22c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCug-fcpxfwA3nET_XOEbh_o0G9SGkG-BQep-eyhAsGOd2K4wa7Ho52RPdoF6__kr9HXI&amp;ec=45780877';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Yeah Spotlight uh moonlight uh Nigga why you trippin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tramhalte Bij De Amsterdamse Poort Batavia 1890 1900 Di 2020 Indonesia Gerbang" src="https://i.pinimg.com/originals/96/19/2b/96192b499d038b48bc179a1e4ee1ec31.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyLyAofna_qPNMl2WtLFfHe_3nMMM_1Rijg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Entrance Moonlight Lighting Glencoe IL Moonlight Effect Uplighting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Penari Jalanan Batavia Ca 1937 Indonesia" src="https://i.pinimg.com/736x/82/63/dd/8263dd3e8866c50bc74ea4c993bfea33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZkCM3w4M8CTzEgUh0ru10iOejDtKMyn2Jg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Batavia Stage Coach Florist is your local florist servicing Batavia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Batavia And Jakarta Now And Then" src="https://i.pinimg.com/736x/33/8d/08/338d08787b87624c82cc7a2f7d5252d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq89_TzWqdsMup_6jMXyRhhdO2bvL_uelD_M2RKhg4CpVc_SQwgCX6rNQPbcQWvZYf0_g&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Charles Wayne Wheaton Glen Ellyn Naperville Downers Grove Hinsdale Elmhurt Oak Park Chicago Barrington Lake Barrington.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gereja Kathedral Jl Lapangan Banteng Utara Jakarta 1860 1900 1965 Gereja Indonesia Sejarah" src="https://i.pinimg.com/564x/22/a5/e6/22a5e6deee4708491634abf4cea2ead0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeuL7uvUEnXwKRxT1ojpPBqtPxG-wP9OD9m5SZt3RD1sIdYx9nrQYIjTlD1Ww8v0ThhYw&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Yeah Spotlight uh moonlight uh Nigga why you trippin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tram Di Simpangan Harmoni Batavia Jakarta Foto Langka Indonesia Belanda" src="https://i.pinimg.com/originals/e8/b9/2f/e8b92f4c38d6810c01b6978c9c850994.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLmwuAPrNnRM1bBs5R26n7rafDy4aNZk34Q';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>MOONLIGHT illuminates the peerless power of cinema to inspire empathy for others and embrace a greater understanding of ourselves.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kleine Klooster Small Convent Batavia 1908 Or Earlier Sekolah Santa Ursula Jl Pos Jakarta 2016 Indonesia Sekolah" src="https://i.pinimg.com/originals/24/50/b2/2450b2642048d1e5cd9317543957f5c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO93VxpA-88iuRLcP6phZmiBB2d-zkAZiWkw';" />
+        <small>Source: tr.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>BMR Oct 19 2016 305 am Love in the Moonlight is a very bright moment in the creative world of modern Korean drama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pojok Jl Ir H Juanda Dan Jl Hayam Wuruk Jakarta 1937 Dunia Arsitek" src="https://i.pinimg.com/736x/b4/26/9e/b4269ef19a4d20879615be8788b87d14.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJasUX0gHjEsGoi-nKXenispO5jNBB_K-d-KXl3pfwlF7R-v5rpOjYjpTE9tNSKIyfU8&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>MOONLIGHT illuminates the peerless power of cinema to inspire empathy for others and embrace a greater understanding of ourselves.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Woning Van De Legercommandant In Het Hertogspark Te Batavia Ca 1880 Gedung Pancasila Kementerian Luar Negeri Jl Pejambon Jakarta 2016 Gedung" src="https://i.pinimg.com/originals/af/e9/9e/afe99e7798630ef8db18c10cfc00acea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMNvv2TyvC_0sHimS51hb_e-02pwKywAoPtfyWlEl_Q7eFOrzQ6NiJ6Bw8VfP1X3HZyc&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>MOONLIGHT illuminates the peerless power of cinema to inspire empathy for others and embrace a greater understanding of ourselves.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Moskee Luar Batang Batavia 1920 1935 Indonesia" src="https://i.pinimg.com/736x/52/3f/06/523f06fdb50fea812b081e1994a06da1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUGXQPzYzpjtVAzYB502DcBifuLxJDjUVJKC8VcOak_B0ZL0PQ-dxvejARJ-ZNFSHEpQ&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The whole album could have been titled after this song but then Ariana Grande changed her mind in favour of Dangerous Woman.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Parapatan Aan Weltevreden Batavia 1870 1890 Jl Prapatan Jakarta 2017 Indonesia" src="https://i.pinimg.com/originals/7d/8c/8c/7d8c8c10d6ccece6bd5f3d709e7ecd4b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RlzOlWwDgaT21D9P9lPmSwwDFZdkAqq612PdjWsrdOMmsNFZQNslvq-ZpkqzdxksgDg&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Disposal of Moonlight Iron Ore Project South Africa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Woning Van De Legercommandant Te Batavia Voor 1880 C Gedung Pancasila Kantor Kementrian Luar Negeri Jl Pejambon Jakarta 2014 Indonesia Gedung" src="https://i.pinimg.com/originals/e6/d0/dd/e6d0dd85fa486d0d98fb217d49d8fe6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCFIeh-Mk44RxcUeRIU4ILzwvHs4VWEYpul6VzbnnbSMeNM4cyDu2BYEsU48R9kJD6Js&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Batavia atau Batauia adalah ibu kota Hindia Belanda yang wilayahnya kini kurang lebih menjadi Jakarta ibu kota IndonesiaBatavia didirikan di pelabuhan bernama Jayakarta yang direbut dari kekuasaan Kesultanan BantenSebelum dikuasai Banten bandar ini dikenal sebagai Kalapa atau Sunda Kelapa dan merupakan salah satu titik perdagangan Kerajaan Sunda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Societeit De Harmonie Aan De Molenvliet In Weltevreden Te Batavia Ca 1900 Harmonie Jakarta 2016 Indonesia Retro" src="https://i.pinimg.com/736x/a3/f7/64/a3f764a9e736f6aee0ce6ffd9c941451.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoK6rcR43Ftij_j4AOjyZlGl75SrUNDFJUicVUj3uhe0QYjMv6yWc8OITPqezTgIuP3os&amp;ec=45780877';" />
+        <small>Source: nl.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Batavia also called Batauia in the citys Malay vernacular was the capital of the Dutch East IndiesThe area corresponds to present-day Jakarta IndonesiaBatavia can refer to the city proper or its suburbs and hinterland the Ommelanden which included the much-larger area of the Residency of Batavia in the present-day Indonesian provinces of Jakarta Banten and West Java.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Halte Ka Stasiun Sawah Besar Jakarta 1900 Indonesia Retro" src="https://i.pinimg.com/736x/54/b5/96/54b5966cb7d65f9bc14cf7aa2dcff9b7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyEqfyDEYNTpQz7aE9I3CN4BDb24Ru5BdeCQ7d5m1gLc7PCqKBb24YgPJja5nviXmjg4&amp;ec=45780877';" />
+        <small>Source: ar.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Charles Wayne Wheaton Glen Ellyn Naperville Downers Grove Hinsdale Elmhurt Oak Park Chicago Barrington Lake Barrington.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Arsip Ig Potolawas" src="https://i.pinimg.com/originals/ed/b3/ea/edb3ea41ee7b189073671c66b89f8703.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRgb5g7F7qT2rdYTu4ge9mS6CVYRzr4RRuTt8cnFFgv2WdgK3IKTFWo2aZGiYfqph1Ns&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>BMR Oct 19 2016 305 am Love in the Moonlight is a very bright moment in the creative world of modern Korean drama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Het Nieuwscentrum Aneta Gebouw Met Snelle Seinverbindingen Gevestigd Aan De Postweg Noord Te Batavia Indonesie 1930 Arsitektur Kolonial Belanda Indonesia" src="https://i.pinimg.com/474x/41/db/27/41db271fe9b21e06c4e940cae0ee07fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0NwFQUoVl43EOXm8H_qXPTNNzXva6AOmBr68nYDJJFT40I2kLvf7qw3qRTunXGw2fRA&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Read reviews from Moon-Lite Chili at 236 E Main St in Batavia 45103-2905 from trusted Batavia restaurant reviewers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kementerian Luar Negeri Jl Pejambon Jakarta 1900" src="https://i.pinimg.com/736x/d1/47/36/d1473674ce08a1e946b438fbbfffa6c9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnd_J7pc1PyWpTjwhwpyO38VaBztnUrpUPLEe2NR5tVaVnzIxWa1sOmCtHEnuwXA1JPA&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>A rich bold mix of lavender burgundy and purple blooms are loosely gathered for a flowy fresh-from-the-garden style.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="De School Tot Opleiding Van Indische Artsen Stovia In Batavia 1924 Arsitektur Bangunan Gedung" src="https://i.pinimg.com/originals/b0/2b/f0/b02bf0937cd931350e7c2959d274bfe5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TvBfDyPQzfM97fnPVZ-Ub4JpZOubOsVhbg';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>A rich bold mix of lavender burgundy and purple blooms are loosely gathered for a flowy fresh-from-the-garden style.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gedung Pancasila Kementerian Luar Negeri Jl Taman Pejambon Jakarta 1880 Gedung Indonesia Dunia" src="https://i.pinimg.com/736x/08/09/cb/0809cb55a6fd92a867928dfe4feabc55.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIsGW5Yt0zRFkqzv513IvQXk86EJYtRx2-bztR1Zp29RPdo3dEyDjU49-UPu7nZUxKtQU&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>See unbiased reviews of Moon-Lite Chili one of 33 Batavia restaurants listed on Tripadvisor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Op Batavia And Jakarta Now And Then" src="https://i.pinimg.com/originals/a8/47/fb/a847fb8b9ac7806067319095e3f8ca77.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFgPaiDSO-RckUrMjsVxuj3hgN3I128_X6k9VjvorLbqbR_LGUY9PvMrWZwKj_HBk0Ss&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>BMR Oct 19 2016 305 am Love in the Moonlight is a very bright moment in the creative world of modern Korean drama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="De Schouwburg Aan De Komediebuurt In Weltevreden Batavia 1895 Gedung Kesenian Jakarta 2014 Gedung Indonesia Dunia" src="https://i.pinimg.com/originals/20/4d/a0/204da0e892cf73474c3d83e3a9308da8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnG6rPZtx8uhOmDQFhbBywpED6bvyN094bD4TMEel4SjPwPnVv4pjH6kfJDU0Xmk7lA&amp;ec=45780877';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Batavia also called Batauia in the citys Malay vernacular was the capital of the Dutch East IndiesThe area corresponds to present-day Jakarta IndonesiaBatavia can refer to the city proper or its suburbs and hinterland the Ommelanden which included the much-larger area of the Residency of Batavia in the present-day Indonesian provinces of Jakarta Banten and West Java.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Huizen Aan Noordwijk Batavia 1946 Arsitektur Kolonial Belanda Indonesia" src="https://i.pinimg.com/originals/f6/0d/e5/f60de529b0e62aefcd9e11f689ec6ae2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfBpsX8SLv9QWgVTwW8tb5xN3BgvSUTDsYvR142Y50ZAERz5xnEMcmG76bRLbb6cy4qKk&amp;ec=45780877';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>In the quaint village of Batavia near the Clermont County courthouse.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+        <center><strong>RELATED POST</strong></center>
+        <center>
+								<a class="badge badge-warning" href="/data-keluaran-hk-2020-hari-ini.html">data keluaran hk 2020 hari ini</a>
+											<a class="badge badge-dark" href="/data-keluar-hk-malam-ini-2020.html">data keluar hk malam ini 2020</a>
+											<a class="badge badge-danger" href="/data-keluaran-hk-16-mei-2020.html">data keluaran hk 16 mei 2020</a>
+											<a class="badge badge-light" href="/data-hongkong-6d-forum-comunity-live-draw-result.html">data hongkong 6d forum comunity live draw result</a>
+											<a class="badge badge-dark" href="/data-keluar-hk-sahabat-4d.html">data keluar hk sahabat 4d</a>
+											<a class="badge badge-secondary" href="/data-keluaran-hk-2020-terlengkap.html">data keluaran hk 2020 terlengkap</a>
+											<a class="badge badge-primary" href="/data-keluar-hk-2019.html">data keluar hk 2019</a>
+											<a class="badge badge-danger" href="/data-keluar-hk-6d.html">data keluar hk 6d</a>
+											<a class="badge badge-secondary" href="/data-keluar-hk-2020-6d.html">data keluar hk 2020 6d</a>
+											<a class="badge badge-danger" href="/data-hongkong-pools-2020-hari-ini.html">data hongkong pools 2020 hari ini</a>
+											<a class="badge badge-danger" href="/data-keluaran-hk-10-oktober-2020.html">data keluaran hk 10 oktober 2020</a>
+											<a class="badge badge-info" href="/data-keluaran-hk-2020-toto.html">data keluaran hk 2020 toto</a>
+											<a class="badge badge-secondary" href="/data-keluaran-hk-2020-toto-gaul.html">data keluaran hk 2020 toto gaul</a>
+											<a class="badge badge-success" href="/data-keluaran-harian-hk-pools-6d-2020.html">data keluaran harian hk pools 6d 2020</a>
+											<a class="badge badge-warning" href="/data-hongkong-sahabat4d.html">data hongkong sahabat4d</a>
+											<a class="badge badge-light" href="/data-keluaran-hk-1-juli-2020.html">data keluaran hk 1 juli 2020</a>
+											<a class="badge badge-success" href="/data-keluaran-hk-2019-sampai-2020-lengkap.html">data keluaran hk 2019 sampai 2020 lengkap</a>
+											<a class="badge badge-success" href="/data-keluaran-hk-2020-terbaru.html">data keluaran hk 2020 terbaru</a>
+											<a class="badge badge-danger" href="/data-keluaran-hk-2020-4d.html">data keluaran hk 2020 4d</a>
+											<a class="badge badge-secondary" href="/data-keluaran-hk-25-agustus-2020.html">data keluaran hk 25 agustus 2020</a>
+							</center>
+        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <script type='text/javascript' src='//zqvee2re50mr.com/a4/31/b2/a431b2df4b60e2629306f7e7e7465d31.js'></script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://zqvee2re50mr.com/f92qg63vc?key=ac20300e264cf09199ec3eda378fd7bb', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
